@@ -5,5 +5,5 @@ public enum OrderState {
     FINISHED,
     ABANDONED,
 
-    
+
 }
