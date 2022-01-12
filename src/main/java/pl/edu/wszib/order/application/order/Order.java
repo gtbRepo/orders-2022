@@ -3,6 +3,7 @@ package pl.edu.wszib.order.application.order;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
+import pl.edu.wszib.order.api.order.OrderApi;
 
 import java.math.BigDecimal;
 
@@ -26,5 +27,9 @@ public class Order {
 
     public Order addItem(OrderItem orderItem) {
         return new Order(id, state, items.add(orderItem), amount);
+    }
+
+    public OrderApi toApi(){
+        return new OrderApi(id.asBasicType(), state, items.toApi(), amount);
     }
 }
