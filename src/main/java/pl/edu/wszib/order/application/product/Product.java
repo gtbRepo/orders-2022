@@ -11,4 +11,8 @@ public class Product {
     // można docelowo przejść na:
     // https://github.com/JavaMoney/jsr354-api
     private final BigDecimal price;
+
+    public boolean hasId(final String productId) {
+        return id.hasId(productId);
+    }
 }

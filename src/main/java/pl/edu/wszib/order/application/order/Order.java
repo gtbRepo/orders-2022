@@ -32,4 +32,8 @@ public class Order {
     public OrderApi toApi(){
         return new OrderApi(id.asBasicType(), state, items.toApi(), amount);
     }
+
+    public Order removeItem(final String productId) {
+        return new Order(id, state, items.remove(productId), amount);
+    }
 }

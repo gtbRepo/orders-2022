@@ -28,4 +28,9 @@ public class OrderItems {
                 .map(OrderItem::toApi)
                 .collect(Collectors.toSet());
     }
+
+    OrderItems remove(final String productId) {
+        boolean b = items.removeIf(item -> item.hasProductId(productId));
+        return new OrderItems(items);
+    }
 }

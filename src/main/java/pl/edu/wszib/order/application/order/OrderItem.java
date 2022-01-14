@@ -37,4 +37,9 @@ public class OrderItem {
         return new OrderItemApi(product.getId().asBasicType(), product.getName(), product.getPrice(), quantity, amount);
 
     }
+
+    public boolean hasProductId(final String productId) {
+        return product.hasId(productId);
+
+    }
 }
