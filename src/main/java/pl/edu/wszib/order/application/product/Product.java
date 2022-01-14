@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.Value;
+import org.hibernate.validator.constraints.Length;
 
 @Value
 public class Product {
@@ -14,8 +15,7 @@ public class Product {
     private final ProductId id;
 
     @NotNull
-    @Min(2)
-    @Max(50)
+    @Length(min = 2, max = 50)
     private final String name;
     // można docelowo przejść na:
     // https://github.com/JavaMoney/jsr354-api
