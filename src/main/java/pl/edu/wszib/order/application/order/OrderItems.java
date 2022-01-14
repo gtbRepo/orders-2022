@@ -30,7 +30,7 @@ public class OrderItems {
     }
 
     OrderItems remove(final String productId) {
-        boolean b = items.removeIf(item -> item.hasProductId(productId));
+        items.removeIf(item -> item.hasProductId(productId));
         return new OrderItems(items);
     }
 }
