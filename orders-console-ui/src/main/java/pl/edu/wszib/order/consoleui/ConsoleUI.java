@@ -1,5 +1,7 @@
 package pl.edu.wszib.order.consoleui;
 
+import pl.edu.wszib.order.api.OrderApi;
+
 import java.util.Scanner;
 
 public class ConsoleUI {
@@ -22,12 +24,12 @@ public class ConsoleUI {
     }
 
     private void createOrder(){
-        return new OrderApi();
+ //       return new OrderApi();
 
     }
 
     private void findByid(final String id){
-        return new OrderApi("");
+   //     return new OrderApi("");
 
     }
     //1. Utwórz zamówienie

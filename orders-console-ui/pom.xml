@@ -16,4 +16,5 @@
             <groupId>pl.edu.wszib</groupId>
             <artifactId>orders-application</artifactId>
         </dependency>
+    </dependencies>
 </project>
