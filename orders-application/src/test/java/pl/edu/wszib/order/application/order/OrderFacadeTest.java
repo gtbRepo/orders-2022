@@ -3,11 +3,13 @@ package pl.edu.wszib.order.application.order;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pl.edu.wszib.order.api.OrderApi;
-import pl.edu.wszib.order.application.product.*;
+import pl.edu.wszib.order.application.product.ProductFacade;
+import pl.edu.wszib.order.application.product.ProductModuleInitialization;
+import pl.edu.wszib.order.application.product.ProductSamples;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class OrderFacadeTest {
     //T3: można usunąć pozycję

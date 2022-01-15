@@ -12,6 +12,8 @@
     <modules>
         <module>orders-api</module>
         <module>orders-application</module>
+        <module>orders-console-ui</module>
+        <module>orders-infrastructure</module>
     </modules>
 
     <!--
@@ -83,12 +85,12 @@
             <dependency>
                 <groupId>pl.edu.wszib</groupId>
                 <artifactId>orders-api</artifactId>
-                <version>$(project.version)</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>pl.edu.wszib</groupId>
                 <artifactId>orders-application</artifactId>
-                <version>$(project.version)</version>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
