@@ -20,4 +20,6 @@ public class ProductFacade {
     public Optional<Product> findById(final ProductId id){
         return productRepository.findById(id);
     }
+
+    //TODO findAll
 }
