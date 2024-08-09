@@ -9,8 +9,9 @@ public class InMemoryOrderRepository implements OrderRepository {
 
 
     @Override
-    public void save(Order order) {
+    public Order save(Order order) {
         orders.put(order.getId(), order);
+        return order;
     }
 
     @Override

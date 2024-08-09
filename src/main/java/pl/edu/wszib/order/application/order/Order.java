@@ -23,4 +23,8 @@ public class Order {
                 BigDecimal.ZERO
         );
     }
+
+    public Order addItem(OrderItem orderItem) {
+        return new Order(id, state, items.add(orderItem), amount);
+    }
 }

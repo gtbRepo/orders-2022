@@ -1,5 +1,6 @@
 package pl.edu.wszib.order.application.order;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class OrderItems {
@@ -10,6 +11,11 @@ public class OrderItems {
     private final Set<OrderItem> items;
 
     public static OrderItems create() {
-        return new OrderItems(Set.of());
+        return new OrderItems(new HashSet<>());
+    }
+
+    public OrderItems add(OrderItem orderItem) {
+        items.add(orderItem);
+        return new OrderItems(items);
     }
 }

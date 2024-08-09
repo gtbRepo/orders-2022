@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class OrderFacadeTest {
 
-    //T1: można stworzyć zamówienie
     //T2: można dodać pozycję do zamówieia
     //T3: mozna usunąć pozycję
     //T4: można zwiększyć ilość dla pozycji
@@ -18,6 +17,8 @@ class OrderFacadeTest {
     // już w zamówieniu powinno skutować zwiększeniem jego ilości.
     //T7: można ukończyć zamówienie
     //T8: nie można modyfikować ukończonego zamówienia
+    //T9: wartość zamówienia powina być sumą wartości pozycji,
+    // wartość pozycji to cena jednostkowa * ilość
 
     private OrderFacade orderFacade;
 
@@ -39,5 +40,18 @@ class OrderFacadeTest {
                 = orderFacade.findById(createdOrder.getId());
         assertTrue(foundOrder.isPresent());
         System.out.println("Order has been created! order = " + createdOrder);
+    }
+
+    @Test
+    public void should_be_able_to_add_item_to_order() {
+        //given:
+        final OrderId orderId = orderFacade.create().getId();
+
+        //when:
+        orderFacade.addItem(orderId, OrderItem.create());
+
+        //then:
+        Optional<Order> foundOrder = orderFacade.findById(orderId);
+        System.out.println("FoundOrder: " + foundOrder);
     }
 }
