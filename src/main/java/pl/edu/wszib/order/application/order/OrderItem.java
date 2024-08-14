@@ -14,10 +14,10 @@ public class OrderItem {
     private final Integer quantity;
     private final BigDecimal amount;
 
-    public OrderItem(Product product, Integer quantity) {
+    public OrderItem(final Product product,
+                     final Integer quantity) {
         this.product = product;
         this.quantity = quantity;
-
         this.amount = calculateAmount();
     }
 
@@ -26,7 +26,6 @@ public class OrderItem {
     }
 
     public static OrderItem create() {
-
         return new OrderItem(
                 new Product(
                         ProductId.create(),
@@ -34,6 +33,5 @@ public class OrderItem {
                         BigDecimal.valueOf(2)),
                 1
         );
-
     }
 }

@@ -46,9 +46,10 @@ class OrderFacadeTest {
     public void should_be_able_to_add_item_to_order() {
         //given:
         final OrderId orderId = orderFacade.create().getId();
+        final OrderItem item = OrderItem.create();
 
         //when:
-        orderFacade.addItem(orderId, OrderItem.create());
+        orderFacade.addItem(orderId, item);
 
         //then:
         Optional<Order> foundOrder = orderFacade.findById(orderId);
