@@ -3,7 +3,6 @@ package pl.edu.wszib.order.application.order;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pl.edu.wszib.order.api.order.OrderApi;
-import pl.edu.wszib.order.api.order.OrderItemAddApi;
 import pl.edu.wszib.order.application.product.InMemoryProductRepository;
 import pl.edu.wszib.order.application.product.ProductFacade;
 import pl.edu.wszib.order.application.product.ProductRepoInitialization;
@@ -54,23 +53,22 @@ class OrderFacadeTest {
         //given:
         final String orderId = orderFacade.create().getId();
 
-        final OrderItemAddApi itemToAdd = new OrderItemAddApi(ProductSamples.CHOCKOLATE.getId().asBasicType(),1);
+        final String productToAdd = ProductSamples.CHOCKOLATE.getId().asBasicType();
 
         //when:
-        orderFacade.addItem(orderId, itemToAdd);
+        orderFacade.addItem(orderId, productToAdd, 1);
 
         //then:
-        Optional<OrderApi> foundOrder = orderFacade.findById(orderId);
-        assertTrue(foundOrder.isPresent());
-        //TODO REFACTOR
-        boolean orderContainsProductWeWantedToAdd = foundOrder.get().getItems().stream().anyMatch(orderItemApi ->
-                orderItemApi.getProductId().equals(itemToAdd.getProductId()));
-        assertTrue(orderContainsProductWeWantedToAdd);
-
-
-        System.out.println("FoundOrder: " + foundOrder);
+        assertOrderContainsProduct(orderId, productToAdd);
     }
 
+    public void assertOrderContainsProduct(final String orderId,
+                                           final String productId) {
+        final OrderApi modifiedOrder = orderFacade.findByIdOrThrow(orderId);
+        boolean orderContainsProductWeWantedToAdd = modifiedOrder.containsProduct(productId);
+        assertTrue(orderContainsProductWeWantedToAdd);
+
+    }
     @Test
     public void should_be_able_to_remove_item_from_order() {
         //TODO Impl

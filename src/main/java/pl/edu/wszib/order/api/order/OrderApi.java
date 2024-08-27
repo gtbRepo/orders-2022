@@ -12,4 +12,9 @@ public class OrderApi {
     private final OrderState state;
     private final Set<OrderItemApi> items;
     private final BigDecimal amount;
+
+    public boolean containsProduct(final String productId) {
+        return items.stream()
+                .anyMatch(item -> item.hasProductId(productId));
+    }
 }
