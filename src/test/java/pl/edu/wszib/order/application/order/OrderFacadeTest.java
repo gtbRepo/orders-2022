@@ -3,6 +3,7 @@ package pl.edu.wszib.order.application.order;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pl.edu.wszib.order.api.order.OrderApi;
+import pl.edu.wszib.order.api.order.OrderApiResult;
 import pl.edu.wszib.order.application.product.InMemoryProductRepository;
 import pl.edu.wszib.order.application.product.ProductFacade;
 import pl.edu.wszib.order.application.product.ProductRepoInitialization;
@@ -45,14 +46,12 @@ class OrderFacadeTest {
         final Optional<OrderApi> foundOrder
                 = orderFacade.findById(createdOrder.getId());
         assertTrue(foundOrder.isPresent());
-        System.out.println("Order has been created! order = " + createdOrder);
     }
 
     @Test
     public void should_be_able_to_add_item_to_order() {
         //given:
         final String orderId = orderFacade.create().getId();
-
         final String productToAdd = ProductSamples.CHOCKOLATE.getId().asBasicType();
 
         //when:
@@ -64,21 +63,31 @@ class OrderFacadeTest {
 
     public void assertOrderContainsProduct(final String orderId,
                                            final String productId) {
-        final OrderApi modifiedOrder = orderFacade.findByIdOrThrow(orderId);
-        boolean orderContainsProductWeWantedToAdd = modifiedOrder.containsProduct(productId);
-        assertTrue(orderContainsProductWeWantedToAdd);
+        final OrderApi order = orderFacade.findByIdOrThrow(orderId);
+        boolean orderContainsProduct = order.containsProduct(productId);
+        assertTrue(orderContainsProduct);
 
     }
+
     @Test
     public void should_be_able_to_remove_item_from_order() {
-        //TODO Impl
-
         //given:
+        final String orderId = orderFacade.create().getId();
+        final String productToRemove = ProductSamples.CHOCKOLATE.getId().asBasicType();
+        orderFacade.addItem(orderId, productToRemove, 1);
+        orderFacade.addItem(orderId, ProductSamples.COCA_COLA_ZERO.getId().asBasicType(), 1);
 
         //when:
+        orderFacade.removeItem(orderId, productToRemove);
 
         //then:
+        assertOrderNotContainsProduct(orderId, productToRemove);
+    }
 
-
+    private void assertOrderNotContainsProduct(final String orderId,
+                                               final String productId) {
+        final OrderApi order = orderFacade.findByIdOrThrow(orderId);
+        boolean orderNotContainsProduct = order.notContainsProduct(productId);
+        assertTrue(orderNotContainsProduct);
     }
 }

@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e46ba99-9160-4cb3-9169-783a71eb20c8" name="Changes" comment="Repetition: zadanie">
+    <list default="true" id="1e46ba99-9160-4cb3-9169-783a71eb20c8" name="Changes" comment="Repetition: refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderItemApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderItemApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/OrderFacadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/OrderFacadeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductRepoInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductRepoInitialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductSamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductSamples.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,30 +49,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.OrderMain.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.myTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.should_be_able_to_add_item_to_order.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.should_be_able_to_create_order.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.orders [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;repetition&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/IceCube/Desktop/Portfolio/Rep/orders-2022&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.OrderMain.executor": "Run",
+    "JUnit.OrderFacadeTest.executor": "Run",
+    "JUnit.OrderFacadeTest.myTest.executor": "Run",
+    "JUnit.OrderFacadeTest.should_be_able_to_add_item_to_order.executor": "Run",
+    "JUnit.OrderFacadeTest.should_be_able_to_create_order.executor": "Run",
+    "JUnit.OrderFacadeTest.should_be_able_to_remove_item_from_order.executor": "Run",
+    "Maven.orders [compile].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "repetition",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/IceCube/Desktop/Portfolio/Rep/orders-2022",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.edu.wszib.order.api.order" />
@@ -145,9 +152,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderFacadeTest.should_be_able_to_remove_item_from_order" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orders-2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.wszib.order.application.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.wszib.order.application.order" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.wszib.order.application.order.OrderFacadeTest" />
+      <option name="METHOD_NAME" value="should_be_able_to_remove_item_from_order" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.OrderFacadeTest" />
+        <item itemvalue="JUnit.OrderFacadeTest.should_be_able_to_remove_item_from_order" />
         <item itemvalue="JUnit.OrderFacadeTest.should_be_able_to_add_item_to_order" />
         <item itemvalue="JUnit.OrderFacadeTest.should_be_able_to_create_order" />
         <item itemvalue="Application.OrderMain" />
@@ -203,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724427583306</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Repetition: refactor">
+      <option name="closed" value="true" />
+      <created>1724786640097</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724786640097</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,7 +244,8 @@
     <MESSAGE value="Repetition: product facade" />
     <MESSAGE value="Repetition: extracted API, fully implemented addItem test" />
     <MESSAGE value="Repetition: zadanie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repetition: zadanie" />
+    <MESSAGE value="Repetition: refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repetition: refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
