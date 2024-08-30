@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e46ba99-9160-4cb3-9169-783a71eb20c8" name="Changes" comment="Repetition: refactor">
+    <list default="true" id="1e46ba99-9160-4cb3-9169-783a71eb20c8" name="Changes" comment="Repetition: impl: remove product from order">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/OrderModuleInitialization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/OrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/OrderMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductFacade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/OrderFacadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/OrderFacadeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductRepoInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductRepoInitialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductSamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductSamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductRepoInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductModuleInitialization.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,20 +89,7 @@
       <recent name="pl.edu.wszib.order.application.order" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderFacadeTest">
-    <configuration name="OrderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.edu.wszib.order.OrderMain" />
-      <module name="orders-2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.wszib.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.java in orders-2022">
     <configuration name="OrderFacadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orders-2022" />
       <extension name="coverage">
@@ -168,13 +153,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="java in orders-2022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orders-2022" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.java in orders-2022" />
         <item itemvalue="JUnit.OrderFacadeTest" />
         <item itemvalue="JUnit.OrderFacadeTest.should_be_able_to_remove_item_from_order" />
         <item itemvalue="JUnit.OrderFacadeTest.should_be_able_to_add_item_to_order" />
         <item itemvalue="JUnit.OrderFacadeTest.should_be_able_to_create_order" />
-        <item itemvalue="Application.OrderMain" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724786640097</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Repetition: impl: remove product from order">
+      <option name="closed" value="true" />
+      <created>1725034127670</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725034127670</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -245,24 +246,25 @@
     <MESSAGE value="Repetition: extracted API, fully implemented addItem test" />
     <MESSAGE value="Repetition: zadanie" />
     <MESSAGE value="Repetition: refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repetition: refactor" />
+    <MESSAGE value="Repetition: impl: remove product from order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repetition: impl: remove product from order" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
