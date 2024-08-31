@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e46ba99-9160-4cb3-9169-783a71eb20c8" name="Changes" comment="Repetition: extracted modules">
+    <list default="true" id="1e46ba99-9160-4cb3-9169-783a71eb20c8" name="Changes" comment="Repetition: product validation annotations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApiResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApiResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderItemApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderItemApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,8 +242,35 @@
       <option name="project" value="LOCAL" />
       <updated>1725037564956</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Repetition: product validation annotations">
+      <option name="closed" value="true" />
+      <created>1725121114054</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725121114054</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Repetition: product validation annotations">
+      <option name="closed" value="true" />
+      <created>1725121257074</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725121257074</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Repetition of material:&#10;Completed Test T1" />
@@ -251,7 +281,8 @@
     <MESSAGE value="Repetition: refactor" />
     <MESSAGE value="Repetition: impl: remove product from order" />
     <MESSAGE value="Repetition: extracted modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repetition: extracted modules" />
+    <MESSAGE value="Repetition: product validation annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repetition: product validation annotations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
