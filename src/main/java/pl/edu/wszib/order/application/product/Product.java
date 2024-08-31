@@ -2,16 +2,15 @@ package pl.edu.wszib.order.application.product;
 
 import jakarta.validation.constraints.*;
 import lombok.Value;
-
+import org.hibernate.validator.constraints.Length;
 import java.math.BigDecimal;
 
 @Value
 public class Product {
-    @NotBlank
+    @NotNull
     private final ProductId id;
     @NotNull
-    @Max(50)
-    @Min(2)
+    @Length(min = 2,max = 50)
     private final String name;
     // można docelowo przejść na:
     // https://github.com/JavaMoney/jsr354-api

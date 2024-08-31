@@ -7,6 +7,7 @@
 
   <properties>
           <hibernate-validator.version>7.0.1.Final</hibernate-validator.version>
+          <el.version>4.0.0</el.version>
   </properties>
   <build>
     <plugins>
@@ -31,6 +32,11 @@
       <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator</artifactId>
       <version>${hibernate-validator.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish</groupId>
+      <artifactId>jakarta.el</artifactId>
+      <version>${el.version}</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>

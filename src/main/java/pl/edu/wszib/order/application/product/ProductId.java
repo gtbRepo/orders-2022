@@ -1,5 +1,6 @@
 package pl.edu.wszib.order.application.product;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
