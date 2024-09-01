@@ -13,6 +13,8 @@
   <modules>
     <module>orders-api</module>
     <module>orders-application</module>
+    <module>orders-console-ui</module>
+    <module>orders-infrastucture</module>
   </modules>
 
   <!--
