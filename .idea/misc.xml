@@ -9,8 +9,6 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/orders-api/pom.xml" />
-        <option value="$PROJECT_DIR$/orders-application/pom.xml" />
         <option value="$PROJECT_DIR$/orders-console-ui/pom.xml" />
         <option value="$PROJECT_DIR$/orders-infrastructure/pom.xml" />
       </set>

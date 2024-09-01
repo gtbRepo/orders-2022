@@ -10,7 +10,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="orders-2022" />
+        <module name="orders-api" />
+        <module name="orders-application" />
       </profile>
     </annotationProcessing>
   </component>

@@ -4,9 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e46ba99-9160-4cb3-9169-783a71eb20c8" name="Changes" comment="Repetition: fix">
+    <list default="true" id="1e46ba99-9160-4cb3-9169-783a71eb20c8" name="Changes" comment="Repetition: upgrade org.glassfish jakarta.el from 4.0.0 to 5.0.0-M1">
+      <change afterPath="$PROJECT_DIR$/orders-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/OrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/OrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-api/src/main/java/pl/edu/wszib/order/api/OrderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderApiResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-api/src/main/java/pl/edu/wszib/order/api/OrderApiResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderError.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-api/src/main/java/pl/edu/wszib/order/api/OrderError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderItemAddApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-api/src/main/java/pl/edu/wszib/order/api/OrderItemAddApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/api/order/OrderItemApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-api/src/main/java/pl/edu/wszib/order/api/OrderItemApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderId.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/order/OrderId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/order/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/order/OrderItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/order/OrderModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/order/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderState.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-api/src/main/java/pl/edu/wszib/order/api/OrderState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/product/ProductFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductId.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/product/ProductId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/product/ProductModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/product/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/main/java/pl/edu/wszib/order/application/product/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/InMemoryOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/test/java/pl/edu/wszib/order/application/order/InMemoryOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/OrderFacadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/test/java/pl/edu/wszib/order/application/order/OrderFacadeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/OrderModuleInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/test/java/pl/edu/wszib/order/application/order/OrderModuleInitialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/order/OrderValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/test/java/pl/edu/wszib/order/application/order/OrderValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/InMemoryProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/test/java/pl/edu/wszib/order/application/product/InMemoryProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductModuleInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/test/java/pl/edu/wszib/order/application/product/ProductModuleInitialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductSamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/test/java/pl/edu/wszib/order/application/product/ProductSamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-application/src/test/java/pl/edu/wszib/order/application/product/ProductValidationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,36 +72,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.OrderMain.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.myTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.should_be_able_to_add_item_to_order.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.should_be_able_to_create_order.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderFacadeTest.should_be_able_to_remove_item_from_order.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderValidationTest.validation_should_work.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductValidationTest.validation_should_work.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.java in orders-2022.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.orders [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.orders [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.orders [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;repetition&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/IceCube/Desktop/Portfolio/Rep/orders-2022&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.OrderMain.executor": "Run",
+    "JUnit.OrderFacadeTest.executor": "Run",
+    "JUnit.OrderFacadeTest.myTest.executor": "Run",
+    "JUnit.OrderFacadeTest.should_be_able_to_add_item_to_order.executor": "Run",
+    "JUnit.OrderFacadeTest.should_be_able_to_create_order.executor": "Run",
+    "JUnit.OrderFacadeTest.should_be_able_to_remove_item_from_order.executor": "Run",
+    "JUnit.OrderValidationTest.validation_should_work.executor": "Run",
+    "JUnit.ProductValidationTest.validation_should_work.executor": "Run",
+    "JUnit.java in orders-2022.executor": "Run",
+    "Maven.orders [clean].executor": "Run",
+    "Maven.orders [compile].executor": "Run",
+    "Maven.orders [package].executor": "Run",
+    "Maven.orders [test].executor": "Run",
+    "Maven.orders [verify].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "repetition",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/IceCube/Desktop/Portfolio/Rep/orders-2022",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.edu.wszib.order.api.order" />
@@ -81,7 +115,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\IceCube\Desktop\Portfolio\Rep\orders-2022\.github\workflows" />
+      <recent name="C:\Users\IceCube\Desktop\Portfolio\Rep\orders-2022\orders-application\src\test\java" />
+      <recent name="C:\Users\IceCube\Desktop\Portfolio\Rep\orders-2022\src\main\java" />
+      <recent name="C:\Users\IceCube\Desktop\Portfolio\Rep\orders-2022\orders-application\src\main\java\pl\edu\wszib\application" />
+      <recent name="C:\Users\IceCube\Desktop\Portfolio\Rep\orders-2022\orders-application\src\main\java\pl\edu\wszib" />
+      <recent name="C:\Users\IceCube\Desktop\Portfolio\Rep\orders-2022\orders-api\src\main\java\pl\edu\wszib" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pl.edu.wszib.order.application.order" />
@@ -381,7 +419,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725133257580</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Repetition: upgrade org.glassfish jakarta.el from 4.0.0 to 5.0.0-M1">
+      <option name="closed" value="true" />
+      <created>1725182166526</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1725182166526</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Repetition: upgrade org.glassfish jakarta.el from 4.0.0 to 5.0.0-M1">
+      <option name="closed" value="true" />
+      <created>1725182206570</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1725182206570</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -411,32 +465,7 @@
     <MESSAGE value="Repetition: add CI" />
     <MESSAGE value="Repetition: CI failure example" />
     <MESSAGE value="Repetition: fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repetition: fix" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/order/application/order/OrderFacade.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/pl/edu/wszib/order/application/product/ProductValidationTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Repetition: upgrade org.glassfish jakarta.el from 4.0.0 to 5.0.0-M1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repetition: upgrade org.glassfish jakarta.el from 4.0.0 to 5.0.0-M1" />
   </component>
 </project>
