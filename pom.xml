@@ -7,7 +7,7 @@
 
   <properties>
           <hibernate-validator.version>7.0.1.Final</hibernate-validator.version>
-          <el.version>4.0.0</el.version>
+          <el.version>5.0.0-M1</el.version>
   </properties>
   <build>
     <plugins>
